@@ -37,3 +37,8 @@ Aplicación web estática, lista para publicar en GitHub Pages, con preguntas fi
 - El formulario original no especifica una escala para **Sabor del aderezo (César)**: se dejó como respuesta libre, sin inventar una escala.
 - La pregunta de precio se deja libre porque el documento no define moneda ni rangos.
 - No se incluyeron nombres ni datos personales de clientes.
+
+
+## Actualización de la encuesta (31/10/2026)
+Se agregó Nombre y apellido obligatorio al comienzo, preguntas 15 y 16 sobre vino y cerveza sin alcohol, y fondo de invitación `abstemia-fondo.jpg`. La tabla existente `survey_responses` guarda las nuevas claves en `answers` (JSON); no se necesita modificar `supabase.sql`. Se corrigió también el reinicio del formulario tras el envío.
+Para actualizar GitHub Pages, reemplazar `app.js`, `styles.css`, `README.md` y subir `abstemia-fondo.jpg`. Mantener el `config.js` ya configurado en GitHub, sin sobrescribirlo.
